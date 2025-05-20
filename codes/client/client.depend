@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1728593726 source:c:\users\dell-5320\desktop\codes_client_serveur\client\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<winsock2.h>
+
+1729582892 source:c:\users\dell-5320\desktop\codes_client_serveur\codes_client_serveur\client\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<winsock2.h>
+
