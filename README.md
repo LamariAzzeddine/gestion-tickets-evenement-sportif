@@ -6,9 +6,9 @@ Ce projet a été réalisé dans le cadre de l’UE Bases de Données / Réseaux
 Il vise à concevoir un système d’accréditation et de gestion centralisée des tickets pour des événements sportifs, avec scan des tickets via QR codes et validation en temps réel.
 
 **Auteurs :**  
-- Dara OFFIONG  
-- Inas BOUKILI  
 - Azzeddine LAMARI
+- Inas BOUKILI  
+- Dara OFFIONG  
 
 ---
 
@@ -62,7 +62,96 @@ Le projet comprend les entités suivantes : Administrateur, AdminDiscipline, Adm
 ### MCD (Modèle Conceptuel de Données)
 
 ![MCD](images/mcd.png)  
-*Schéma MCD du système (extrait du rapport)*
+*Schéma MCD (extrait du rapport)*
 
 ### MLD (Modèle Logique de Données)
+
+![MLD](images/mld.png)  
+*Schéma MLD (extrait du rapport)*
+
+---
+
+## Scénarios réseaux
+
+Voici quelques scénarios réseaux illustrant le fonctionnement du système lors du scan de tickets :
+
+- **Scan d’un ticket valide**  
+  ![Scan ticket valide](images/1.png)
+- **Scan d’un ticket expiré**  
+  ![Scan ticket expiré](images/2.png)
+- **Scan d’un ticket pour une mauvaise zone**  
+  ![Mauvaise zone](images/3.png)
+- **Scan d’un ticket déjà scanné**  
+  ![Déjà scanné](images/4.png)
+- **Scan d’un ticket inexistant**  
+  ![Ticket inexistant](images/5.png)
+- **Accès à un événement non autorisé**  
+  ![Evenement non autorisé](images/6.png)
+
+
+---
+
+## Jeu de données exemple
+
+Le projet inclut un jeu de données réaliste pour tester le système, incluant des exemples d’administrateurs, disciplines, événements, spectateurs, tickets, scanners, etc.
+
+*(Voir la documentation pour le jeu de données complet)*
+
+---
+
+## Technologies utilisées
+
+- **Python** (serveur réseau)
+- **C** (client réseau)
+- **SQL** (base de données relationnelle)
+- **NCAT** (tests réseaux)
+- **QR Code** (gestion des tickets)
+- **GitHub** (gestion de version et documentation)
+
+---
+
+## Installation et utilisation
+
+1. **Cloner le dépôt**
+2. **Configurer la base de données**
+    - Importer les scripts SQL fournis dans le dossier `/sql` (à créer si besoin).
+3. **Lancer le serveur**
+    - Voir le code Python dans `/server`.
+4. **Lancer le client**
+    - Voir le code C dans `/client`.
+5. **Effectuer des tests réseaux**
+    - Utiliser les scripts et exemples fournis dans `/tests`.
+
+
+---
+
+## Annexes
+
+- **Code source** (client, serveur, scripts SQL)
+- **Fichiers de configuration**
+- **Tests réseaux (NCAT)**
+- **Captures d’écran de l’application web**
+- **Requêtes SQL utilisées**
+
+---
+
+## Rapport complet
+
+Le rapport détaillé du projet est disponible ici :  
+[Documentation.pdf](Documentation.pdf)
+
+---
+
+## Licence
+
+Ce projet est proposé sous licence MIT (ou autre, à préciser selon ton choix).
+
+---
+
+## Contact
+
+Pour toute question ou suggestion, n’hésitez pas à contacter les auteurs via GitHub ou LinkedIn.
+
+---
+
 
